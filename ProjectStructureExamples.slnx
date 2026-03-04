@@ -1,4 +1,8 @@
 <Solution>
-  <Folder Name="/Structure1/" />
-  <Folder Name="/Structure2/" />
+  <Folder Name="/Structure1/">
+    <Project Path="ProjectStructure1.Api/ProjectStructure1.Api.csproj" />
+  </Folder>
+  <Folder Name="/Structure2/">
+    <Project Path="ProjectStructure2.Api/ProjectStructure2.Api.csproj" />
+  </Folder>
 </Solution>
