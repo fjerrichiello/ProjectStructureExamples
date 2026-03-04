@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Gemini\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ProjectStructure1.Domain\ProjectStructure1.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

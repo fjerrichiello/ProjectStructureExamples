@@ -1,8 +1,23 @@
 <Solution>
   <Folder Name="/Structure1/">
     <Project Path="ProjectStructure1.Api/ProjectStructure1.Api.csproj" />
+    <Project Path="ProjectStructure1.Application/ProjectStructure1.Application.csproj" />
+    <Project Path="ProjectStructure1.Domain/ProjectStructure1.Domain.csproj" />
+    <Project Path="ProjectStructure1.Infrastructure/ProjectStructure1.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/Structure2/">
     <Project Path="ProjectStructure2.Api/ProjectStructure2.Api.csproj" />
+    <Project Path="ProjectStructure2.Application/ProjectStructure2.Application.csproj" />
+    <Project Path="ProjectStructure2.Claude/ProjectStructure2.Claude.csproj" />
+    <Project Path="ProjectStructure2.Domain/ProjectStructure2.Domain.csproj" />
+    <Project Path="ProjectStructure2.Gemini/ProjectStructure2.Gemini.csproj" />
+  </Folder>
+  <Folder Name="/Structure3/">
+    <Project Path="ProjectStructure3.Agent/ProjectStructure3.Agent.csproj" />
+    <Project Path="ProjectStructure3.Api/ProjectStructure3.Api.csproj" />
+    <Project Path="ProjectStructure3.Application/ProjectStructure3.Application.csproj" />
+    <Project Path="ProjectStructure3.Claude/ProjectStructure3.Claude.csproj" />
+    <Project Path="ProjectStructure3.Domain/ProjectStructure3.Domain.csproj" />
+    <Project Path="ProjectStructure3.Gemini/ProjectStructure3.Gemini.csproj" />
   </Folder>
 </Solution>
