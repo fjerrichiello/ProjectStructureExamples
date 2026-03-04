@@ -2,6 +2,5 @@
 
 public interface IAiAgent
 {
-    
-    string ParseJson();
+    string ParseJson(string json);
 }

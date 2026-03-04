@@ -7,11 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Gemini\" />
+      <ProjectReference Include="..\ProjectStructure1.Domain\ProjectStructure1.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ProjectStructure1.Domain\ProjectStructure1.Domain.csproj" />
+      <Folder Include="Claude\ApiClient\" />
+      <Folder Include="Gemini\Models\" />
     </ItemGroup>
 
 </Project>

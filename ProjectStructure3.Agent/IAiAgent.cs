@@ -2,5 +2,7 @@
 
 public interface IAiAgent
 {
-    string ParseJson();
+    Task<string> PromptAi(string prompt);
+    
+    string ParseJson(string json);
 }
