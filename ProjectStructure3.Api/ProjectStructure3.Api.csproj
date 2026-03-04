@@ -10,4 +10,11 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ProjectStructure3.Application\ProjectStructure3.Application.csproj" />
+      <ProjectReference Include="..\ProjectStructure3.Claude\ProjectStructure3.Claude.csproj" />
+      <ProjectReference Include="..\ProjectStructure3.Codex\ProjectStructure3.Codex.csproj" />
+      <ProjectReference Include="..\ProjectStructure3.Gemini\ProjectStructure3.Gemini.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,8 +1,20 @@
+using ProjectStructure3.Api;
+using ProjectStructure3.Application;
+using ProjectStructure3.Claude;
+using ProjectStructure3.Codex;
+using ProjectStructure3.Gemini;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddScoped<IAiService, AiService>();
+
+builder.Services.AddClaude();
+builder.Services.AddGemini();
+builder.Services.AddCodex();
 
 var app = builder.Build();
 
@@ -14,12 +26,22 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapGet("/prompt/{model}", async (IAiService service, string model) =>
+{
+    var testPrompt = "String is long";
+
+    var result = await service.PromptAiAsync(testPrompt, model);
+
+    return result;
+});
+
+
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/", () =>
     {
         var forecast = Enumerable.Range(1, 5).Select(index =>
                 new WeatherForecast
@@ -35,7 +57,10 @@ app.MapGet("/weatherforecast", () =>
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+namespace ProjectStructure3.Api
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    {
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
 }

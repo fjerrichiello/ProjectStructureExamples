@@ -10,6 +10,7 @@
     <Project Path="ProjectStructure3.Api/ProjectStructure3.Api.csproj" />
     <Project Path="ProjectStructure3.Application/ProjectStructure3.Application.csproj" />
     <Project Path="ProjectStructure3.Claude/ProjectStructure3.Claude.csproj" />
+    <Project Path="ProjectStructure3.Codex/ProjectStructure3.Codex.csproj" />
     <Project Path="ProjectStructure3.Domain/ProjectStructure3.Domain.csproj" />
     <Project Path="ProjectStructure3.Gemini/ProjectStructure3.Gemini.csproj" />
   </Folder>

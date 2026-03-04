@@ -1,6 +1,13 @@
-@ProjectStructure3.Api_HostAddress = http://localhost:5125
+@ProjectStructure3 = http://localhost:5125
 
 GET {{ProjectStructure3.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{ProjectStructure3}}/prompt/gemini
+
+###
+GET {{ProjectStructure3}}/prompt/claude
+
+###
+GET {{ProjectStructure3}}/prompt/codex

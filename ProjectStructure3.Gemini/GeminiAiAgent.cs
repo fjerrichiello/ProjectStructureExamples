@@ -1,9 +1,9 @@
 ﻿using ProjectStructure3.Agent;
-using ProjectStructure3.Claude.ApiClient;
+using ProjectStructure3.Gemini.ApiClient;
 
 namespace ProjectStructure3.Gemini;
 
-public class GeminiAiAgent(IGeminiClient geminiClient) : IAiAgent
+internal class GeminiAiAgent(IGeminiClient geminiClient) : IAiAgent
 {
     public async Task<string> PromptAi(string prompt)
     {

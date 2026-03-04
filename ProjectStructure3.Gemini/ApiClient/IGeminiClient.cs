@@ -1,6 +1,6 @@
-﻿namespace ProjectStructure3.Claude.ApiClient;
+﻿namespace ProjectStructure3.Gemini.ApiClient;
 
-public interface IGeminiClient
+internal interface IGeminiClient
 {
     Task<string> CallApiAsync(string apiCall);
 }

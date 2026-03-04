@@ -1,6 +1,6 @@
-﻿namespace ProjectStructure3.Claude.ApiClient;
+﻿namespace ProjectStructure3.Codex.ApiClient;
 
-internal class ClaudeClient : IClaudeClient
+internal class CodexClient : ICodexClient
 {
     public async Task<string> CallApiAsync(string apiCall)
     {

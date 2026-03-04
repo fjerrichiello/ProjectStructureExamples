@@ -3,7 +3,7 @@ using ProjectStructure3.Claude.ApiClient;
 
 namespace ProjectStructure3.Claude;
 
-public class ClaudeAiAgent(IClaudeClient claudeClient) : IAiAgent
+internal class ClaudeAiAgent(IClaudeClient claudeClient) : IAiAgent
 {
     public async Task<string> PromptAi(string prompt)
     {
